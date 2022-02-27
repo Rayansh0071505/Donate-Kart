@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="page" id="blog">
+        <div class="blog-head">
+              <h1>Donate for Medical Purpose</h1>
+              <img src="" alt="">
+        </div>
+        <div class="blogrow">
+          <div class="blogcard">
+             <img src="https://media.istockphoto.com/photos/thoughtful-mature-man-in-hospital-ward-picture-id493216441?k=20&m=493216441&s=612x612&w=0&h=MAdsqIzf5edHKJy0SW_Ny-jktIOoNdQzWhz4ZWNrJRQ=">
+           <br> <h4>Name- Peter Davidson</h4>
+            <h2>Disease- Cancer
+              <br> Needed Amount-100k$
+            </h2>
+            <button onclick="launchRazorPay()" class="payement_btn">
+              Proceed to pay
+          </button>        
+           </div>
+
+           <div class="blogcard">
+            <img src="https://media.istockphoto.com/photos/female-black-hospitalized-patient-lying-in-bed-looking-away-while-a-picture-id1277228269?k=20&m=1277228269&s=612x612&w=0&h=lyphRkHJ9pPXw78egE3yokqEMUtXdTZzJ9HbKt4h-_A=">
+          <br> <h4>Name- Sarah William</h4>
+           <h2>Disease- Tumor
+             <br> Needed Amount-300k$
+           </h2>
+           <button onclick="launchRazorPay()" class="payement_btn">
+             Proceed to pay
+         </button>        
+          </div>
+
+          <div class="blogcard">
+            <img src="https://media.istockphoto.com/photos/african-man-with-oxygen-support-in-hospital-room-picture-id1312641893?b=1&k=20&m=1312641893&s=170667a&w=0&h=Ei0kqA8sFXMtyXPMiQSii0Js9PM_h46aS3W7Wq1knD0=">
+          <br> <h4>Name- John Quill</h4>
+           <h2>Disease- liver damage
+             <br> Needed Amount-200k$
+           </h2>
+           <button onclick="launchRazorPay()" class="payement_btn">
+             Proceed to pay
+         </button>        
+          </div>
+
+          <div class="blogcard">
+            <img src="https://s.yimg.com/ny/api/res/1.2/WTa1KCUWUXhgc9oCbs.sLQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD0xMTk2/https://s.yimg.com/uu/api/res/1.2/Dk1GIc9Smwl0eb6rmPS0DQ--~B/aD0xOTk0O3c9MjAwMDthcHBpZD15dGFjaHlvbg--/http://media.zenfs.com/en-US/homerun/people_218/bfbcf7dc5bcbbd833d6dcdcb4c950afb">
+          <br> <h4>Name-Peter Parker </h4>
+           <h2>Disease-Fractured Leg
+             <br> Needed Amount-20k$
+           </h2>
+           <button onclick="launchRazorPay()" class="payement_btn">
+             Proceed to pay
+         </button>        
+          </div>
+
+          <div class="blogcard">
+            <img src="https://i.guim.co.uk/img/media/45f44dfb141c9e0bc0ee846c8f933455dfdd8f2f/1150_973_1489_893/master/1489.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=e49ff14c1182834389f4c9fa6c026de0">
+          <br> <h4>Name- Alex Smith </h4>
+           <h2>Disease- Heart Disease
+             <br> Needed Amount- 300k$
+           </h2>
+           <button onclick="launchRazorPay()" class="payement_btn">
+             Proceed to pay
+         </button>        
+          </div>
+
+          <div class="blogcard">
+            <img src="https://www.healthychildren.org/SiteCollectionImagesArticleImages/young-girl-in-a-hospital-bed-with-her-teddy-bear.jpg?RenditionID=6">
+          <br> <h4>Name- Roman Rays</h4>
+           <h2>Disease-Arthritis
+             <br> Needed Amount-50k$
+           </h2>
+           <button onclick="launchRazorPay()" class="payement_btn">
+             Proceed to pay
+         </button>        
+          </div>
+
+          <div class="blogcard">
+            <img src="https://static01.nyt.com/images/2021/09/03/world/03virus-briefing-children/merlin_193664898_27ef45c5-0f41-4bfb-9d01-57d53751f370-superJumbo.jpg">
+          <br> <h4>Name- Simon Regs </h4>
+           <h2>Disease- Brain Tumor
+             <br> Needed Amount- 450k$
+           </h2>
+           <button onclick="launchRazorPay()" class="payement_btn">
+             Proceed to pay
+         </button>        
+          </div>
+          
+          
+          <div class="blogcard">
+            <img src="https://raisingchildren.net.au/__data/assets/image/0032/48596/going-to-hospital-common-concerns.jpg">
+          <br> <h4>Name- Samantha White </h4>
+           <h2>Disease- Liver Damage
+             <br> Needed Amount- 250k$
+           </h2>
+           <button onclick="launchRazorPay()" class="payement_btn">
+             Proceed to pay
+         </button>        
+          </div>
+          
+            
+
+
+
+
+
+
+
+
+
+
+        </div>
+      
+         
+          
+          
+    </section>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        Object.onclick = launchRazorPay = () => {
+            let options = {
+                key: "rzp_test_PKPubWYc4XYFkp",
+                amount: 10000 * 100,
+                currency: "INR",
+                name: "Fund Raiser",
+                description: "Payment gateway",
+                image: "",
+                handler: () => {
+                    alert("Payment Done");
+                },
+                theme: {
+                    color: "#0d6efd"
+                },
+
+            };
+
+            const RazorPay = new window.Razorpay(options);
+            RazorPay.open();
+
+        };
+    </script>
+</body>
+</html>

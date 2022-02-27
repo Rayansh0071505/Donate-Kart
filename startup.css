@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.name_conatiner{
+    width: 100%;
+    text-align: center;
+   
+}
+.name{
+    padding: 1vw;
+    color: white;
+    background-color: #537895;
+background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.startup_info_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    flex-wrap: wrap;
+    background-color: #537895;
+background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+   padding: 2rem;
+   font-family: 'Poppins', sans-serif;
+}
+.startup_img_discription_conatiner{
+    
+    position: relative;
+    right: 50px;
+    
+    color: white;
+    width: 50%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+}
+.startup_image_container{
+    position: relative;
+    bottom:2rem;
+   
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.startup_image{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.startup_discription_conatiner{
+    position: relative;
+    left: 9rem;
+    text-align: center;
+    background-color: #f2cf43;
+background-image: linear-gradient(315deg, #f2cf43 0%, #19a186 74%);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 300px;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.startup_discription_conatiner:hover{
+   box-shadow:  0px 25px 50px #EEEB18;
+   transition: 0.3s;
+}
+.startup_info_conatiner{
+    width: 50%;
+    background-color: #fbb034;
+background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    color: black;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.startup_info_conatiner:hover{
+    box-shadow:  0px 25px 50px #EEEB18;
+    transition: 0.3s;
+}
+.payement_btn{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 0.5rem;
+    color: white;
+    border: solid burlywood;
+    background-color: burlywood;
+    cursor: pointer;
+}
+.payement_btn:hover{
+    color: burlywood;
+    background-color: white;
+    transition: 0.3s;
+}

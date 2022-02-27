@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <link rel="stylesheet" href="top-bar.css"> -->
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="startup.css">
+<link rel="stylesheet" href="startup 2.css">
+<link rel="stylesheet" href="startup 3.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+</style>
+ <!-- fontawesome -->
+ <script src="https://kit.fontawesome.com/55e3645646.js" crossorigin="anonymous"></script>
+ <!-- search -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- poppins -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+ <!-- Fira Sans -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+<!-- youtubeicon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- github -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- linkedin -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- play btn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DonateKart</title>
+    <!-- image_grid_css -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        .container .carousel-caption
+        {
+            color:white;
+            font-weight: bold;
+        }
+
+        .container_imagegrid {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 40px 20px 0 20px;
+            background-color: rgb(248, 242, 248);
+            margin-left: 5rem;
+            margin-right: 5rem;
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+
+        }
+
+        .container_imagegrid .heading {
+            width: 50%;
+            padding-bottom: 50px;
+        }
+
+        .container_imagegrid .heading h3 {
+            font-size: 3em;
+            font-weight: bolder;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #222;
+        }
+
+        .container_imagegrid .heading h3 span {
+            font-weight: 100;
+        }
+
+        .container_imagegrid .box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        .container_imagegrid .box .dream {
+            display: flex;
+            flex-direction: column;
+            width: 32.5%;
+            align-items: center;
+
+        }
+
+        .container_imagegrid .box .dream img {
+            width: 80%;
+            padding-bottom: 15px;
+            border-radius: 5px;
+
+
+        }
+
+        .container_imagegrid .btn {
+            margin: 40px 0 70px 0;
+            background: #222;
+            padding: 15px 40px;
+            border-radius: 5px;
+            width: 15rem;
+        }
+
+        .container_imagegrid .btn a {
+            color: #fff;
+            font-size: 1.2em;
+            text-decoration: none;
+            font-weight: bolder;
+            letter-spacing: 3px;
+        }
+
+        @media only screen and (max-width: 769px) {
+            .container_imagegrid .box {
+                flex-direction: column;
+            }
+
+            .container_imagegrid .box .dream {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 643px) {
+            .container_imagegrid .heading {
+                width: 100%;
+            }
+
+            .container_imagegrid .heading h3 {
+                font-size: 1em;
+            }
+        }
+        a.fbo
+        {
+           background-color: transparent;
+            color:black;
+        }
+        a.tempora
+        {
+            background-color: transparent;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="navbar" >
+        <!-- //ul items -->
+        <div>
+
+            <ul class="First">
+                <!-- <li class="navcontent"> Search <i class="fa fa-search"></i></li> -->
+                <li class="navcontent"> Discover <i id="chveron" class="fa-solid fa-chevron-down"></i>
+                    <ul>
+                        <li class="submenu"><a class="clr" href="cards.html">Startups</a></li>
+                        <li class="submenu"><a class="clr" href="#">Education</a></li>
+                        <li class="submenu"><a class="clr" href="blog.html">Medical</a></li>
+                        <li class="submenu"><a class="clr" href="#">Help</a></li>
+                    </ul> </li>
+                <li class="navcontent">Fundraise for <i  id="chveron" class="fa-solid fa-chevron-down"></i>
+                    <ul>
+                        <li class="submenus"><a class="clr" href="newfundraiser.html">Fundraise</a></li>
+                        <li class="submenus"><a class="clr" href="payment.html">Donate</a></li>
+                    </ul></li>
+
+            </ul>
+
+        </div>
+        <!-- //logo -->
+        <div class="logo">
+            <!-- <img src="" alt=""> -->
+            <h3>DonateKart</h3>
+        </div>
+        <!-- //button sigin -->
+        <div>
+            <ul class="First">
+                <li class="navcontent"> How it works 
+
+                </li>
+            
+                <li class="navcontent">  <a class="newanchor" href="sign-up.html" >Sign in </a></li>
+                <button> <a class="newanchor" href="newfundraiser.html">Start Fundraiser</a></button>
+
+            </ul>
+        </div>
+    </nav>
+    <section class="page" id="first-page">
+        <!-- Carousel -->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-carousel" src='istockphoto-1271755758-170667a.jpg' ; alt="HEy">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Happiness doesn’t result from what we get, but from what we give.</h1>
+                            <p>Change will not come if we wait for some other person or some other time. We are the ones we’ve been waiting for. We are the change that we seek</p>
+                            <p><a class="btn-carousel " href="sign-up.html">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-carousel" src='elyse-chia-kyeJW1zRH0I-unsplash.jpg'  alt="HEy">
+
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Doing good feels good, study finds.</h1>
+                            <p>Help others without any reason and give without the expectation of receiving anything in return.</p>
+                            <p><a class="btn-carousel " href="#">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-carousel" src='hands.jpg' ; alt="HEy">
+
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>One more for good measure.</h1>
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p><a class="btn-carousel " href="#">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="second-page" class="page">
+        <div class="donationpage_conatiner">
+            <div class="donationpage_heading_conatiner">
+                <h2 class="donationpage_heading">
+                    Start a Fundraiser 
+                </h2>
+            </div>
+
+            <div class="donationpage_img_btn_conatiner">
+                <div class="btn-conatiner">
+                    <div>
+                        <button class="fund_btn"><a class="change" href="newfundraiser.html">
+                        Start a Fundraiser</a></button>
+                    </div>
+                   
+                     <button class="working_btn"> See how Donatekart works</button>
+                </div>
+
+                <div class="donationpage_image_conatiner">
+                    <img class="donationpage_image" src="donate.jpeg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- image-grid -->
+    <div class="container_imagegrid">
+        <div class="heading">
+            <h3> TOP <span>FUNDRAISER</span></h3>
+        </div>
+        <div class="box">
+
+            <div class="dream">
+                <img src="https://i.pinimg.com/originals/a1/aa/1f/a1aa1fd1a92b32233b6cfb797f7547df.jpg">
+                <img src="https://images.pexels.com/photos/3566880/pexels-photo-3566880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            </div>
+
+            <div class="dream">
+                <a href="https://www.pexels.com/photo/smiling-black-children-standing-on-street-5196013/">
+                     <img src="https://images.pexels.com/photos/2385657/pexels-photo-2385657.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260">
+                    </a>
+                <img src="https://images.pexels.com/photos/1739842/pexels-photo-1739842.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                <img src="https://images.pexels.com/photos/1153976/pexels-photo-1153976.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                <div class="btn">
+                    <a href="#">More</a>
+                </div>
+            </div>
+
+            <div class="dream">
+                <img src="https://images.pexels.com/photos/1098769/pexels-photo-1098769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                <img src="https://images.pexels.com/photos/10360237/pexels-photo-10360237.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                <!-- <img src="https://images.pexels.com/photos/9993427/pexels-photo-9993427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"> -->
+                <img src="https://images.pexels.com/photos/5196013/pexels-photo-5196013.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- RaiseFund -->
+    <div class="RaiseFund_conatiner">
+        <div class="container_RAISEFUNDS">
+            <h3 class="RAISEFUNDS">
+                RAISE FUNDS
+            </h3>
+            <button class="RAISEFUND_BTN"><a class="fbo" href="newfundraiser.html">Raise Funds</a></button>
+        </div>
+        <div class="container_CHILDRENimage">
+            <img class="CHILDRENimage" src="imgchildren1.jpeg" alt="">
+        </div>
+    </div>
+
+
+
+    <!-- image part -->
+    <div class="flex_image">
+        <div class="container_image">
+            <img class="iamgeart" src="imgman2.jpeg" alt="">
+        </div>
+        <div class="container_discription">
+            <h3 class="discription">
+                You can Start your own Fundraiser right now
+            </h3>
+        </div>
+    </div>
+
+    <!-- image part -->
+    <div class="flex_image">
+        <div class="container_discription2">
+            <h3 class="discription2">
+                So what are you <br>
+                waiting for <b> Sign Up </b> <br>
+                now and help a life!!
+            </h3>
+            <button  class="sign_btn" ><a class="tempora" href="sign-up.html">Sign Up</a></button>
+        </div>
+        <div class="container_image">
+            <img class="iamgeart" src="imgdonationchildren3.jpeg" alt="">
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer_conatiner">
+            <div footer_image_conatiner>
+                <img src="https://cdn.discordapp.com/attachments/941731080870969447/946100736977170462/Screenshot_2022-02-23_161840_4.png"
+                    alt="" class="footer_image">
+            </div>
+
+            <div class="footer_content">
+                <div class="footer_discription_conatiner">
+                    <h3 class="footer_discription_heading">
+                        Fundraiser For
+                    </h3>
+                    <ul class="discription_list_conatiner">
+                        <li class="discription_list">Medical</li>
+                        <li class="discription_list">Emergency</li>
+                        <li class="discription_list">Memorial</li>
+                        <li class="discription_list">Education</li>
+                        <li class="discription_list">Charity</li>
+                    </ul>
+                </div>
+
+                <div class="footer_discription_conatiner">
+                    <h3 class="footer_discription_heading">
+                        Fundraiser For
+                    </h3>
+                    <ul class="discription_list_conatiner">
+                        <li class="discription_list">Medical</li>
+                        <li class="discription_list">Emergency</li>
+                        <li class="discription_list">Memorial</li>
+                        <li class="discription_list">Education</li>
+                        <li class="discription_list">Charity</li>
+                    </ul>
+                </div>
+
+                <div class="footer_discription_conatiner">
+                    <h3 class="footer_discription_heading">
+                        Fundraiser For
+                    </h3>
+                    <ul class="discription_list_conatiner">
+                        <li class="discription_list">Medical </li>
+                        <li class="discription_list">Emergency</li>
+                        <li class="discription_list">Memorial</li>
+                        <li class="discription_list">Education</li>
+                        <li class="discription_list">Charity</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer_icons_conatiner">
+
+            <a class="footer_icons" id="github" href=""><i class="fa fa-github" style=" font-size: 35px; "></i></a>
+            <a class="footer_icons" id="yotube" href=""><i class="fa fa-youtube-play" style=" font-size: 35px;"></i></a>
+            <a class="footer_icons" id="linkedin" href=""><i class="fa fa-linkedin-square"
+                    style=" font-size: 35px;"></i></a>
+        </div>
+
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
